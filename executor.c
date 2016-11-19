@@ -29,17 +29,14 @@ int main() {
     //max input length for mac terminal.app
     char input[262144];
     
-    printf("wyd fam: ");
+    printf("exeggute: ");
     fgets(input, 262144, stdin);
 
-    char filteredInput[262144];
-    for (int i = 0 ; i < strlen(input) - 1 ; i++) {
-        
-    }
-
+    //get rid of newline char
+    input[strlen(input) - 1] = 0;
     
-    printf("a%sb", input);
-    //execString(input);
+    //printf("a%sb", input);
+    execString(input);
 
     return 0;
 }
